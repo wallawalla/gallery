@@ -110,5 +110,6 @@ proguard/
 *.war
 
 #phonegap builds
+hooks
 platforms
 plugins
