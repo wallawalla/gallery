@@ -30,7 +30,6 @@ define([
      * Loads categories from JSON and fill categorieCollection
      */
     BODataManager.prototype.initCategories = function () {
-        var self = this;
         $.ajax({
             url: 'data/categories.json',
             dataType: 'JSON',
@@ -41,6 +40,7 @@ define([
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
+                window.alert(textStatus);
                 window.console.log('error', jqXHR, textStatus, errorThrown);
             }
         });

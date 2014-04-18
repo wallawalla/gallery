@@ -1,4 +1,4 @@
-/*global define, alert*/
+/*global define*/
 
 define([
     'jquery',
@@ -29,12 +29,12 @@ define([
 
             // launch app when device is ready
             document.addEventListener('deviceready', function () {
-                self.onDeviceReady(self);
+                self.onDeviceReady();
             }, false);
-            this.onDeviceReady(self); // Uncomment for grunt serve
+            // this.onDeviceReady(); // Uncomment for grunt serve
         },
 
-        onDeviceReady: function (context) {
+        onDeviceReady: function () {
             // Load DB
             BODataManager.initData();
 
