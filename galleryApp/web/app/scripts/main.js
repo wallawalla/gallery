@@ -17,12 +17,17 @@ require.config({
     paths: {
         jquery: '../bower_components/jquery/jquery',
         backbone: '../bower_components/backbone/backbone',
-        underscore: '../bower_components/underscore/underscore'
+        underscore: '../bower_components/underscore/underscore',
+
+        approuter: 'routes/approuter',
+        views: 'views',
+        templates: 'templates'
     }
 });
 
 require([
-    'backbone'
-], function (Backbone) {
-    Backbone.history.start();
+    'backbone',
+    'approuter'
+], function (Backbone, Approuter) {
+    new Approuter();
 });
