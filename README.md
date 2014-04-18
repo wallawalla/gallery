@@ -48,6 +48,7 @@ Installer au moins une plateforme (android/ios/...) :
 #### Etape 5:
 Se replacer dans le dossier web et lancer le build sur device:
 
+    cd web
     grunt android
     grunt ios
 
