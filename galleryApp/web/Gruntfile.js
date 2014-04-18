@@ -261,6 +261,12 @@ module.exports = function (grunt) {
                     stdout: true
                 },
                 command: 'phonegap run android'
+            },
+            buildIos: {
+                options: {
+                    stdout: true
+                },
+                command: 'phonegap run ios'
             }
         }
     });
@@ -347,5 +353,12 @@ module.exports = function (grunt) {
         'build',
         'shell:copyDist',
         'shell:buildAndroid'
+    ]);
+
+    grunt.registerTask('ios', [
+        'jshint',
+        'build',
+        'shell:copyDist',
+        'shell:buildIos'
     ]);
 };
