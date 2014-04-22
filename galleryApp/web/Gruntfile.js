@@ -111,7 +111,7 @@ module.exports = function (grunt) {
         jshint: {
             options: {
                 jshintrc: '.jshintrc',
-                reporter: require('jshint-stylish')
+                reporter: require('jshint-stylish-ex')
             },
             all: [
                 'Gruntfile.js',
@@ -173,6 +173,14 @@ module.exports = function (grunt) {
                     src: '{,*/}*.{png,jpg,jpeg}',
                     dest: '<%= yeoman.dist %>/images'
                 }]
+            },
+            uploads: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/uploads',
+                    src: '{,*/}*.{png,jpg,jpeg}',
+                    dest: '<%= yeoman.dist %>/uploads'
+                }]
             }
         },
         cssmin: {
@@ -218,6 +226,8 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
+                        'data/*.json',
+                        'uploads/{,*/}*.{webp,gif,png,jpeg,jpg}'
                     ]
                 }]
             }
@@ -332,7 +342,8 @@ module.exports = function (grunt) {
         'jst',
         'useminPrepare',
         'requirejs',
-        'imagemin',
+        'imagemin:dist',
+        // 'imagemin:uploads',
         'htmlmin',
         'concat',
         'cssmin',

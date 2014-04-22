@@ -25,7 +25,8 @@
     "connect-livereload": "~0.3.2",
     "time-grunt": "~0.2.8",
     "jshint-stylish": "~0.1.5",
-    "grunt-shell": "~0.6.4"
+    "grunt-shell": "~0.6.4",
+    "jshint-stylish-ex": "~0.2.0"
   },
   "engines": {
     "node": ">=0.10.0"

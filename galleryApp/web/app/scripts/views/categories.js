@@ -17,7 +17,9 @@ define([
         el: '#main',
 
         events: {
-            'click #catNavMenu' : 'displayMenu'
+            'click #catNavMenu' : 'displayMenu',
+            'click .categories li a img' : 'goToGallery',
+            'click .categories li a span' : 'goToGallery'
         },
 
         initialize: function () {},
@@ -39,6 +41,11 @@ define([
             _.each(categories.models, function(cat) {
                 catList.append(self.templateCat(cat.toJSON()));
             });
+        },
+
+        goToGallery: function (evt) {
+            evt.preventDefault();
+            Backbone.history.navigate($(evt.target).parent().attr('href'), {trigger:true, replace:false});
         }
     });
 

@@ -30,19 +30,14 @@ define([
      * Loads categories from JSON and fill categorieCollection
      */
     BODataManager.prototype.initCategories = function () {
-        $.ajax({
-            url: 'data/categories.json',
-            dataType: 'JSON',
-            success: function (data) {
-                if (data) {
-                    EventsManager.events.trigger('categories:change', data);
-                    EventsManager.events.trigger('approuter:start');
-                }
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                window.alert(textStatus);
-                window.console.log('error', jqXHR, textStatus, errorThrown);
+        $.getJSON('data/categories.json', function (data) {
+            if (data) {
+                EventsManager.events.trigger('categories:change', data);
+                EventsManager.events.trigger('approuter:start');
             }
+        }).fail(function (error) {
+            window.alert(JSON.stringify(error));
+            window.console.log('error', error);
         });
     };
 
