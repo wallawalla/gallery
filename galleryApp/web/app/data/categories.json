@@ -1,42 +1,52 @@
 [
     {
-        "title":"landscapes",
-        "src":"./uploads/landscapes-01.jpg"
+        "name":"landscapes",
+        "src":"./uploads/landscapes-01.jpg",
+        "title":"Landscapes"
     },
     {
-        "title":"space",
-        "src":"./uploads/space-01.jpg"
+        "name":"space",
+        "src":"./uploads/space-01.jpg",
+        "title":"Space"
     },
     {
-        "title":"animals",
-        "src":"./uploads/animals-01.jpg"
+        "name":"animals",
+        "src":"./uploads/animals-01.jpg",
+        "title":"Animals"
     },
     {
-        "title":"videogames",
-        "src":"./uploads/videogames-01.jpg"
+        "name":"videogames",
+        "src":"./uploads/videogames-01.jpg",
+        "title":"Video Games"
     },
     {
-        "title":"computing",
-        "src":"./uploads/computing-01.jpg"
+        "name":"computing",
+        "src":"./uploads/computing-01.jpg",
+        "title":"Computing"
     },
     {
-        "title":"sport",
-        "src":"./uploads/sport-01.jpg"
+        "name":"sport",
+        "src":"./uploads/sport-01.jpg",
+        "title":"Sport"
     },
     {
-        "title":"transportation",
-        "src":"./uploads/transportation-01.jpg"
+        "name":"transportation",
+        "src":"./uploads/transportation-01.jpg",
+        "title":"Transportation"
     },
     {
-        "title":"manga",
-        "src":"./uploads/manga-01.jpg"
+        "name":"manga",
+        "src":"./uploads/manga-01.jpg",
+        "title":"Manga"
     },
     {
-        "title":"comics",
-        "src":"./uploads/comics-01.jpg"
+        "name":"comics",
+        "src":"./uploads/comics-01.jpg",
+        "title":"Comics"
     },
     {
-        "title":"music",
-        "src":"./uploads/music-01.jpg"
+        "name":"music",
+        "src":"./uploads/music-01.jpg",
+        "title":"Music"
     }
 ]

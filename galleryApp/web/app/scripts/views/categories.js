@@ -1,4 +1,4 @@
-/*global define*/
+/*global define, FastClick*/
 
 define([
     'jquery',
@@ -6,7 +6,9 @@ define([
     'backbone',
     'templates',
     'eventsmanager',
-    'appdata'
+    'appdata',
+    'isotope',
+    'libs'
 ], function ($, _, Backbone, JST, EventsManager, AppData) {
     'use strict';
 
@@ -27,6 +29,7 @@ define([
         render: function () {
             this.$el.html(this.template());
             this.displayCategories();
+            FastClick.attach(document.getElementById('categories'));
         },
 
         displayMenu: function () {

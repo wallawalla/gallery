@@ -1,4 +1,4 @@
-/*global define*/
+/*global define, FastClick*/
 
 define([
     'jquery',
@@ -25,6 +25,7 @@ define([
 
         render: function () {
             this.$el.html(this.template());
+            FastClick.attach(document.getElementById('nav'));
         },
 
         displayHideMenu: function () {

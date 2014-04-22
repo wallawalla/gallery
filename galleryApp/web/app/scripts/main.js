@@ -12,12 +12,20 @@ require.config({
                 'jquery'
             ],
             exports: 'Backbone'
+        },
+        libs: {
+            deps: [
+                'jquery'
+            ]
         }
     },
     paths: {
         jquery          : '../bower_components/jquery/jquery',
         backbone        : '../bower_components/backbone/backbone',
         underscore      : '../bower_components/underscore/underscore',
+        isotope         : '../bower_components/isotope/jquery.isotope.min',
+
+        libs            : 'vendor/libs',
 
         approuter       : 'routes/approuter',
         models          : 'models',

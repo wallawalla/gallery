@@ -9,8 +9,9 @@ define([
     'views/menu',
     'views/home',
     'views/categories',
-    'views/gallery'
-], function ($, Backbone, EventsManager, BODataManager, AppData, MenuView, HomeView, CatView, GalleryView) {
+    'views/gallery',
+    'views/details'
+], function ($, Backbone, EventsManager, BODataManager, AppData, MenuView, HomeView, CatView, GalleryView, DetailsView) {
     'use strict';
 
     var ApprouterRouter = Backbone.Router.extend({
@@ -18,7 +19,8 @@ define([
             '/' : 'home',
             'home': 'home',
             'categories' : 'categories',
-            'gallery/:catname' : 'gallery'
+            'gallery/:catname' : 'gallery',
+            'details/:id' : 'details'
         },
 
         initialize: function () {
@@ -27,6 +29,7 @@ define([
             this.homeView   = new HomeView();
             this.catView    = new CatView();
             this.galleryView = new GalleryView();
+            this.detailsView = new DetailsView();
 
             var self = this;
 
@@ -34,7 +37,7 @@ define([
             document.addEventListener('deviceready', function () {
                 self.onDeviceReady();
             }, false);
-            this.onDeviceReady(); // Uncomment for grunt serve
+            // this.onDeviceReady(); // Uncomment for grunt serve
         },
 
         onDeviceReady: function () {
@@ -61,6 +64,11 @@ define([
 
         gallery: function (catname) {
             this.galleryView.render(catname);
+            this.menuView.render();
+        },
+
+        details: function (id) {
+            this.detailsView.render(id);
             this.menuView.render();
         }
     });

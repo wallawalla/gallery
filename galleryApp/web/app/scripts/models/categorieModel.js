@@ -2,22 +2,20 @@
 
 define([
     'underscore',
-    'backbone',
-    'eventsmanager'
-], function (_, Backbone, EventsManager) {
+    'backbone'
+], function (_, Backbone) {
     'use strict';
 
     var CategorieModel = Backbone.Model.extend({
         defaults: {
         },
 
-        initialize: function() {
-            EventsManager.events.on('model:change', this.setCategories, this);
-        },
+        initialize: function() {},
 
-        initCat: function (title, src) {
-            this.set('title', title);
-            this.set('src', src);
+        initCat: function (item) {
+            this.set('name', item.name);
+            this.set('src', item.src);
+            this.set('title', item.title);
         }
     });
 

@@ -9,5 +9,7 @@
     "requirejs-text": "~2.0.10",
     "modernizr": "~2.7.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "isotope": "~2.0.0"
+  }
 }

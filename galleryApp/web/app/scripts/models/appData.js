@@ -5,27 +5,43 @@ define([
     'backbone',
     'eventsmanager',
     'models/categorieModel',
-    'collections/categories'
-], function (_, Backbone, EventsManager, CategorieModel, CategoriesCollection) {
+    'models/imgModel',
+    'collections/categories',
+    'collections/images'
+], function (_, Backbone, EventsManager, CategorieModel, ImgModel, CategoriesCollection, ImgCollection) {
     'use strict';
 
     var AppDataModel = Backbone.Model.extend({
         defaults: {
-            categoriesCollection: null
+            categoriesCollection: null,
+            imgCollection: null
         },
 
-        initialize: function() {
+        initialize: function () {
             this.set('categoriesCollection', new CategoriesCollection());
+            this.set('imgCollection', new ImgCollection());
             EventsManager.events.on('categories:change', this.setCategories, this);
+            EventsManager.events.on('images:change', this.setImg, this);
         },
 
-        setCategories: function(catJSON) {
+        setCategories: function (catJSON) {
             var self = this;
             _.each(catJSON, function (item) {
                 var model = new CategorieModel();
-                model.initCat(item.title, item.src);
+                model.initCat(item);
 
                 self.get('categoriesCollection').add(model);
+            });
+        },
+
+        setImg: function (imgJSON) {
+            var self = this;
+
+            _.each(imgJSON, function (item) {
+                var model = new ImgModel();
+                model.initImg(item);
+
+                self.get('imgCollection').add(model);
             });
         }
     }, {

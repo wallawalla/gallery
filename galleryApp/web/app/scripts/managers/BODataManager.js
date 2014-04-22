@@ -1,9 +1,7 @@
 /*global define*/
 /**
  * BO Data Manager
- * @author  Matthieu Lacrampe
- * @date 03/04/14
- * Manages initialisation for localizations & countrySpecs
+ * Manages Data Initialization
  */
 
 define([
@@ -24,6 +22,7 @@ define([
      */
     BODataManager.prototype.initData = function () {
         this.initCategories();
+        this.initImages();
     };
 
     /**
@@ -33,6 +32,20 @@ define([
         $.getJSON('data/categories.json', function (data) {
             if (data) {
                 EventsManager.events.trigger('categories:change', data);
+            }
+        }).fail(function (error) {
+            window.alert(JSON.stringify(error));
+            window.console.log('error', error);
+        });
+    };
+
+    /**
+     * Loads images from JSON and fill imgCollection
+     */
+    BODataManager.prototype.initImages = function () {
+        $.getJSON('data/datas.json', function (data) {
+            if (data) {
+                EventsManager.events.trigger('images:change', data);
                 EventsManager.events.trigger('approuter:start');
             }
         }).fail(function (error) {

@@ -1,0 +1,186 @@
+[
+    {
+        "title":"image 01",
+        "id":"I01",
+        "src":"./uploads/01.jpg",
+        "description":"description of image 01",
+        "author":"author01",
+        "categories":["landscapes","trees"]
+    },
+    {
+        "title":"image 02",
+        "id":"I02",
+        "src":"./uploads/02.jpg",
+        "description":"description of image 02",
+        "author":"author02",
+        "categories":["landscapes","trees"]
+    },
+    {
+        "title":"image 03",
+        "id":"I03",
+        "src":"./uploads/03.jpg",
+        "description":"description of image 03",
+        "author":"author 03",
+        "categories":["landscapes",""]
+    },
+    {
+        "title":"image 04",
+        "id":"I04",
+        "src":"./uploads/04.jpg",
+        "description":"description of image 04",
+        "author":"author04",
+        "categories":["space"]
+    },
+    {
+        "title":"image 05",
+        "id":"I05",
+        "src":"./uploads/05.jpg",
+        "description":"description of image 05",
+        "author":"author05",
+        "categories":["space"]
+    },
+    {
+        "title":"image 06",
+        "id":"I06",
+        "src":"./uploads/06.jpg",
+        "description":"description of image 06",
+        "author":"author06",
+        "categories":["space"]
+    },
+    {
+        "title":"image 07",
+        "id":"I07",
+        "src":"./uploads/07.jpg",
+        "description":"description of image 07",
+        "author":"author07",
+        "categories":["animals"]
+    },
+    {
+        "title":"image 08",
+        "id":"I08",
+        "src":"./uploads/08.jpg",
+        "description":"description of image 08",
+        "author":"author08",
+        "categories":["animals"]
+    },
+    {
+        "title":"image 09",
+        "id":"I09",
+        "src":"./uploads/09.jpg",
+        "description":"description of image 09",
+        "author":"author09",
+        "categories":["animals"]
+    },
+    {
+        "title":"image 10",
+        "id":"I10",
+        "src":"./uploads/10.jpg",
+        "description":"description of image 10",
+        "author":"author10",
+        "categories":["videogames"]
+    },
+    {
+        "title":"image 11",
+        "id":"I11",
+        "src":"./uploads/11.jpg",
+        "description":"description of image 11",
+        "author":"author11",
+        "categories":["videogames"]
+    },
+    {
+        "title":"image 12",
+        "id":"I12",
+        "src":"./uploads/12.jpg",
+        "description":"description of image 12",
+        "author":"author12",
+        "categories":["computing"]
+    },
+    {
+        "title":"image 13",
+        "id":"I13",
+        "src":"./uploads/13.jpg",
+        "description":"description of image 13",
+        "author":"author13",
+        "categories":["computing"]
+    },
+    {
+        "title":"image 14",
+        "id":"I14",
+        "src":"./uploads/14.jpg",
+        "description":"description of image 14",
+        "author":"author14",
+        "categories":["sport"]
+    },
+    {
+        "title":"image 15",
+        "id":"I15",
+        "src":"./uploads/15.jpg",
+        "description":"description of image 15",
+        "author":"author15",
+        "categories":["sport"]
+    },
+    {
+        "title":"image 16",
+        "id":"I16",
+        "src":"./uploads/16.jpg",
+        "description":"description of image 16",
+        "author":"author16",
+        "categories":["transportation"]
+    },
+    {
+        "title":"image 17",
+        "id":"I17",
+        "src":"./uploads/17.jpg",
+        "description":"description of image 17",
+        "author":"author17",
+        "categories":["transportation"]
+    },
+    {
+        "title":"image 18",
+        "id":"I18",
+        "src":"./uploads/18.jpg",
+        "description":"description of image 18",
+        "author":"author18",
+        "categories":["manga"]
+    },
+    {
+        "title":"image 19",
+        "id":"I19",
+        "src":"./uploads/19.jpg",
+        "description":"description of image 19",
+        "author":"author19",
+        "categories":["manga"]
+    },
+    {
+        "title":"image 20",
+        "id":"I20",
+        "src":"./uploads/20.jpg",
+        "description":"description of image 20",
+        "author":"author20",
+        "categories":["comics"]
+    },
+    {
+        "title":"image 21",
+        "id":"I21",
+        "src":"./uploads/21.jpg",
+        "description":"description of image 21",
+        "author":"author21",
+        "categories":["comics"]
+    },
+    {
+        "title":"image 22",
+        "id":"I22",
+        "src":"./uploads/22.jpg",
+        "description":"description of image 22",
+        "author":"author22",
+        "categories":["music"]
+    },
+    {
+        "title":"image 23",
+        "id":"I23",
+        "src":"./uploads/23.jpg",
+        "description":"description of image 23",
+        "author":"author23",
+        "categories":["music"]
+    }
+]
