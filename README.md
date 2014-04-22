@@ -13,6 +13,8 @@ Vérifiez que vous avez NodeJS, Phonegap, Cordova:
 * NodeJS => [Get it here!](http://nodejs.org/)
 * Phonegap => npm install -g phonegap (uniquement après avoir installé NodeJS)
 * Cordova => npm install -g cordova
+* Grunt CLI => npm install -g grunt-cli
+* Ant => [Get Binary here for Windows!](https://ant.apache.org/bindownload.cgi)
 
 #### Etape 1:
 Récupérer le projet par ligne de commande :
